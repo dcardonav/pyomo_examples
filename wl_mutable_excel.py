@@ -1,8 +1,8 @@
 import pandas as pd
 import pyomo.environ as pyo
-from wl_mutable improt create_warehouse_model
+from wl_mutable import create_warehouse_model
 
-df = pd.read_excel('data.xlsx', 'Sheet1', header=0, index_col=0
+df = pd.read_excel('data.xlsx', 'Sheet1', header=0, index_col=0)
 
 N = list(df.index.map(str))
 M = list(df.columns.map(str))
